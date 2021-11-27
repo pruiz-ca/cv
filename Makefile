@@ -8,6 +8,3 @@ clean:
 log:
 			@xelatex cv.tex
 
-upload:
-			all
-			@cp cv.pdf ~/Documents/src/pedroruiz.xyz/static/
