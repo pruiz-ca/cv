@@ -15,4 +15,4 @@ jobs:
           port: ${{ secrets.SERVER_PORT }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_KEY }}
-          script: cd ${{ secrets.PROJECT_PATH }} && git pull && make && mv cv.pdf ${{ secrets.WEB_PATH }}/static/ && make clean && cd ${{ secrets.WEB_PATH }} && git add -A && git commit -m "updated pdf" && git push
+          script: export PATH=~/bin:$PATH && cd ${{ secrets.PROJECT_PATH }} && git pull && make && mv cv.pdf ${{ secrets.WEB_PATH }}/static/ && make clean && cd ${{ secrets.WEB_PATH }} && git add -A && git commit -m "updated pdf" && git push
