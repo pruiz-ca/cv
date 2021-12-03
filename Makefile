@@ -6,5 +6,8 @@ clean:
 			@rm -rf cv.pdf
 
 log:
-			@xelatex cv.tex
+			@clear -x
+			@echo "Making CV.."
+			@xelatex cv.tex > /dev/null 2>&1
+			@echo "Finished!"
 
