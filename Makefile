@@ -8,5 +8,5 @@ clean:
 log:
 			@/bin/echo "Making CV.."
 			@xelatex cv.tex > /dev/null 2>&1
-			@/bin/echo "Finished!"
+			@/bin/echo "Finished creating cv.pdf"
 
